@@ -17,15 +17,15 @@ import "./lib/lib";
 // console.log($(".findme").fadeIn(2000, ()=>console.log('111')));
 
 $("#first").on("click", () => {
-  $("div").eq(1).fadeOut(1000);
+  $("div").eq(1).fadeToggle(1000);
 });
 
 $('[data-ffff="second"]').on("click", () => {
-  $("div").eq(2).fadeOut(1000);
+  $("div").eq(2).fadeToggle(1000);
 });
 
 $("button")
   .eq(2)
   .on("click", () => {
-    $("div").fadeOut(1000);
+    $("div").fadeToggle(1000);
   });
