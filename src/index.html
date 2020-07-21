@@ -9,15 +9,16 @@
   </head>
   <body>
     <div class="container">
-      <button class="btn btn-primary m-20" id="first">btn-primary</button>
-      <button class="btn btn-success m-20" data-ffff="second">
-        btn-success
-      </button>
-      <button class="btn btn-danger m-20">btn-danger1</button>
-
+      <!--      <button class="btn btn-primary m-20" id="first">btn-primary</button>-->
+      <!--      <button class="btn btn-success m-20" data-ffff="second">-->
+      <!--        btn-success-->
+      <!--      </button>-->
+      <!--      <button class="btn btn-danger m-20">btn-danger1</button>-->
 
       <!--dropdown menu-->
-      <br />    <br />    <br />
+      <br />
+      <br />
+      <br />
       <div class="dropdown">
         <button class="btn btn-primary dropdown-toggle" id="dropdownMenuButton">
           Dropdown button
@@ -28,7 +29,82 @@
           ><a href="#" class="dropdown-item">Action 3</a>
         </div>
       </div>
+
       <!--dropdown menu-->
+
+      <!--      Card-->
+      <div class="goods d-flex f-space-around">
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://is4-ssl.mzstatic.com/image/thumb/Purple18/v4/aa/dc/54/aadc54da-732d-8484-7252-97f6026c3213/source/256x256bb.jpg"
+            alt="photo"
+          />
+          <div class="card-body">
+            <div class="card-title">Card title 1</div>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusantium autem, corporis facilis fugiat ipsum magnam quaerat
+              tempora. Animi commodi error est eveniet expedita inventore
+              molestias, quidem saepe sint soluta. Doloribus?
+            </p>
+            <a
+              href="#"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              >Link to</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://is4-ssl.mzstatic.com/image/thumb/Purple18/v4/aa/dc/54/aadc54da-732d-8484-7252-97f6026c3213/source/256x256bb.jpg"
+            alt="photo"
+          />
+          <div class="card-body">
+            <div class="card-title">Card title 2</div>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusantium autem, corporis facilis fugiat ipsum magnam quaerat
+              tempora. Animi commodi error est eveniet expedita inventore
+              molestias, quidem saepe sint soluta. Doloribus?
+            </p>
+            <a href="#" class="btn btn-primary">Link to</a>
+          </div>
+        </div>
+      </div>
+
+      <!--      Card-->
+
+      <!--      Modal-->
+      <div class="modal" id="exampleModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" data-close>
+              <span>
+                &times;
+              </span>
+            </button>
+            <div class="modal-header">
+              <div class="modal-title">Modal title</div>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+              facilis magnam officia. Eos exercitationem nesciunt quibusdam sunt
+              tempora! A amet assumenda eaque eos, explicabo ipsa nostrum
+              perspiciatis quasi qui repudiandae!
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-close>Close</button>
+              <button class="btn btn-success">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--      Modal-->
     </div>
 
     <script src="script.js"></script>
