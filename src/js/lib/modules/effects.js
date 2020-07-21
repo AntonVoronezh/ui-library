@@ -61,7 +61,6 @@ $.prototype.fadeOut = function (dur, final) {
 
 $.prototype.fadeToggle = function (duration, display, final) {
   for (let i = 0; i < this.lenght; i++) {
-    console.log(this[i])
     if (window.getComputedStyle(this[i]).display === "none") {
       this[i].style.display = display || "block";
 
