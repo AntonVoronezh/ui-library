@@ -9,14 +9,16 @@ $.prototype.addClass = function (...classNames) {
 
 $.prototype.removeClass = function (...classNames) {
   for (let i = 0; i < this.lenght; i++) {
-    this[i].classList.remove(...classNames);
+    if (this[i]) {
+      this[i].classList.remove(...classNames);
+    }
   }
   return this;
 };
 
 $.prototype.toggleClass = function (className) {
-    for (let i = 0; i < this.lenght; i++) {
-        this[i].classList.toggle(className);
-    }
-    return this;
+  for (let i = 0; i < this.lenght; i++) {
+    this[i].classList.toggle(className);
+  }
+  return this;
 };
