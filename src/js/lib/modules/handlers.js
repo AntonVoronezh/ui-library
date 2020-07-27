@@ -1,7 +1,6 @@
 import $ from "../core";
 
 $.prototype.on = function (eventMane, callback) {
-  console.log('on',this)
   if (!eventMane || !callback) {
     return this;
   }
