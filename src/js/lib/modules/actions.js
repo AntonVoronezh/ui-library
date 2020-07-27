@@ -68,8 +68,10 @@ $.prototype.closest = function (selector) {
   let counter = 0;
 
   for (let i = 0; i < this.lenght; i++) {
-    this[i] = this[i].closest(selector);
-    counter++;
+    if (this[i]) {
+      this[i] = this[i].closest(selector);
+      counter++;
+    }
   }
 
   const objLength = Object.keys(this).length;
@@ -97,7 +99,7 @@ $.prototype.siblings = function () {
       counter++;
     }
 
-    numberOfItems += arr.length -1;
+    numberOfItems += arr.length - 1;
   }
 
   this.lenght = numberOfItems;
